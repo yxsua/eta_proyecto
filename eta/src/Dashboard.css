@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container_start {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para apilar los elementos verticalmente */
+    width: 100%;
+    min-height: 100vh; /* Asegura que el contenedor tenga al menos la altura del viewport */
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(230, 230, 255), rgb(198, 198, 255));
+    align-items: center; /* Centra horizontalmente */
+}
+
+.dash_container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    margin: 20px 0; /* Espaciado alrededor del título */
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    width: 70%;
+    height: 300px; /* Ajusta esta altura según tus necesidades */
+}
+
+@media screen and (max-width: 768px) {
+    .chart-container {
+      font-size: 1em; /* Ajusta el tamaño de la fuente para pantallas más pequeñas */
+      padding: 6px 12px; /* Ajusta el relleno del botón para pantallas más pequeñas */
+      margin-top: 9%;
+      width: 95%;
+      height: auto;
+    }
+  }
+  
+h1, h2 {
+    color: black; /* Cambia el color del texto para que sea visible sobre el fondo */
+  }

@@ -1,0 +1,44 @@
+.scrollable-container {
+    max-height: 300px; /* Altura fija con desplazamiento */
+    overflow-y: auto;  /* Desplazamiento vertical */
+    border: 1px solid #ddd;
+    margin: 20px;
+  }
+  
+  .scrollable-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .scrollable-table th, .scrollable-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .scrollable-table th {
+    background-color: rgb(91, 151, 236);
+    color: white;
+    position: sticky;
+    top: 0; /* Sticky header */
+  }
+
+  .scrollable-table td {
+    background-color: #fff;
+  }
+
+  /* Estiliza la barra de desplazamiento */
+.scrollable-container::-webkit-scrollbar {
+    width: 8px; /* Ancho del scrollbar */
+  }
+  
+  .scrollable-container::-webkit-scrollbar-track {
+    background: transparent; /* Fondo del track del scrollbar */
+  }
+  
+  .scrollable-container::-webkit-scrollbar-thumb {
+    background-color: #0f26a5; /* Color del thumb del scrollbar */
+    border-radius: 10px; /* Radio de borde para hacer el thumb un óvalo */
+    border: 2px solid transparent; /* Espacio alrededor del thumb */
+    background-clip: padding-box;
+  }
+  
